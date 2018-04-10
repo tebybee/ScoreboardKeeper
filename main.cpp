@@ -27,6 +27,7 @@ int main()
   }
   else
   {
+  cout<<"SCOREBOARD\n";
   board.resize(teams);
    for(int i=0; i< board.size(); i++)
    {
