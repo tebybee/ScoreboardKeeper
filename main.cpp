@@ -7,7 +7,7 @@ const int MAX_PERIODS = 10;
 const int MAX_TEAMS = 4;
 const int MIN_PERIODS = 1;
 const int MIN_TEAMS = 1;
-
+vector<vector<int> > board;
 int main()
 {
   int periods;
@@ -27,6 +27,19 @@ int main()
   }
   else
   {
+  board.resize(teams);
+   for(int i=0; i< board.size(); i++)
+   {
+        board[i].resize(periods);
+        cout<< "Player" <<i+1<< ": ";
+        for(int k=0; k< board[i].size(); k++)
+        {
+            board[i][k] = 0;
+            cout<<board[i][k]<< "| ";
+        }
+        cout<<"\n";
+   }        
+
    //make scoreboard and fill it with zeros
   
    //once created, display the scoreboard
